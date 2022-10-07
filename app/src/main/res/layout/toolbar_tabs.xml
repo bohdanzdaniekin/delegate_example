@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.bohdanzdaniekin.delegate.ui.view.AppBarLayoutStub xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/toolbarViewStub"
+    style="@style/Wide"
+    android:theme="@style/Theme.Delegate.AppBarOverlay">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="?attr/colorPrimary"
+        app:popupTheme="@style/Theme.Delegate.PopupOverlay" />
+
+    <com.google.android.material.tabs.TabLayout
+        android:id="@+id/tabLayout"
+        style="@style/Wide" />
+
+</com.bohdanzdaniekin.delegate.ui.view.AppBarLayoutStub>

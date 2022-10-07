@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="deep_sapphire">#06255C</color>
+    <color name="facebook_blue">#3C5A99</color>
+    <color name="calypso">#377291</color>
+    <color name="outrageous_orange">#FD5F40</color>
+    <color name="outrageous_orange_light">#1AFD5F40</color>
+    <color name="gamboge">#EA9D0D</color>
+    <color name="mine_shaft">#333333</color>
+    <color name="gray">#8E8E8E</color>
+    <color name="santas_gray_light">#9E9EAB</color>
+    <color name="white">#FFFFFF</color>
+    <color name="cinnabar">#EA5133</color>
+    <color name="mirage">#161D25</color>
+    <color name="mirage_transparent_70">#B3161D25</color>
+    <color name="ebony_clay">#242D36</color>
+    <color name="shuttle_gray">#565E70</color>
+    <color name="spun_pearl">#AEAFB9</color>
+    <color name="radical_red">#FF3951</color>
+    <color name="waterloo">#7A8194</color>
+    <color name="river_bed">#434B5E</color>
+    <color name="ship_gray">#3F3E45</color>
+    <color name="dodger_blue">#5599FF</color>
+    <color name="athens_gray">#F6F6F9</color>
+    <color name="gray_loading">#4D8E8E8E</color>
+    <color name="santas_gray">#99A0B2</color>
+    <color name="fog">#DCC6FF</color>
+    <color name="onahau">#C8E2FF</color>
+    <color name="mid_grey">#60606F</color>
+    <color name="project_background">#F6F6F9</color>
+    <color name="project_info_background">#CC252525</color>
+
+    <color name="divider">#CCCCCC</color>
+</resources>

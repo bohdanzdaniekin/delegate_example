@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="fab_margin">16dp</dimen>
+    <dimen name="divider_size">1dp</dimen>
+
+    <dimen name="radius_mini">4dp</dimen>
+    <dimen name="radius_small">8dp</dimen>
+    <dimen name="radius_default">12dp</dimen>
+    <dimen name="radius_medium">16dp</dimen>
+    <dimen name="radius_large">24dp</dimen>
+
+    <dimen name="spacing_mini">4dp</dimen>
+    <dimen name="spacing_small">8dp</dimen>
+    <dimen name="spacing_medium">12dp</dimen>
+    <dimen name="spacing_default">16dp</dimen>
+    <dimen name="spacing_large">32dp</dimen>
+    <dimen name="spacing_xlarge">40dp</dimen>
+
+    <dimen name="card_height">166dp</dimen>
+
+</resources>

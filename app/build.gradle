@@ -1,0 +1,100 @@
+plugins {
+    id "com.android.application"
+    id "org.jetbrains.kotlin.android"
+    id "org.jetbrains.kotlin.kapt"
+    id "kotlin-parcelize"
+}
+apply from: "../versions.gradle"
+
+android {
+    compileSdk versions.android.compileSdk
+
+    defaultConfig {
+        applicationId 'com.bohdanzdaniekin.delegate'
+        minSdk versions.android.minSdk
+        targetSdk versions.android.targetSdk
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        debug {
+            minifyEnabled false
+            shrinkResources false
+            debuggable true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+        release {
+            minifyEnabled true
+            shrinkResources true
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-core:$versions.coroutines"
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:$versions.coroutines"
+
+    implementation "androidx.core:core-ktx:$versions.androidx.core"
+    implementation "androidx.appcompat:appcompat:$versions.androidx.appcompat"
+    implementation "androidx.annotation:annotation:$versions.androidx.annotation"
+    implementation "com.google.android.material:material:$versions.androidx.material"
+
+    implementation "androidx.activity:activity-ktx:$versions.androidx.activity"
+    implementation "androidx.fragment:fragment-ktx:$versions.androidx.fragment"
+
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$versions.androidx.lifecycle"
+    implementation "androidx.lifecycle:lifecycle-livedata-ktx:$versions.androidx.lifecycle"
+
+    implementation "androidx.constraintlayout:constraintlayout:$versions.androidx.constraint"
+    implementation "androidx.recyclerview:recyclerview:$versions.androidx.recyclerview"
+    implementation "androidx.swiperefreshlayout:swiperefreshlayout:1.1.0"
+
+    implementation "androidx.navigation:navigation-fragment-ktx:$versions.androidx.navigation"
+    implementation "androidx.navigation:navigation-ui-ktx:$versions.androidx.navigation"
+
+    // Retrofit
+    implementation "com.squareup.retrofit2:retrofit:$versions.frameworks.retrofit"
+    implementation "com.squareup.retrofit2:converter-moshi:$versions.frameworks.retrofit"
+
+    implementation "com.squareup.moshi:moshi:$versions.frameworks.moshi"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:$versions.frameworks.moshi"
+
+    // Okhttp
+    implementation platform("com.squareup.okhttp3:okhttp-bom:$versions.frameworks.okhttp")
+    implementation "com.squareup.okhttp3:okhttp"
+    implementation "com.squareup.okhttp3:logging-interceptor"
+
+    // Dagger 2
+    implementation "com.google.dagger:dagger:$versions.frameworks.dagger"
+    implementation "com.google.dagger:dagger-android-support:$versions.frameworks.dagger"
+    kapt "com.google.dagger:dagger-android-processor:$versions.frameworks.dagger"
+    kapt "com.google.dagger:dagger-compiler:$versions.frameworks.dagger"
+
+    implementation "com.github.kirich1409:viewbindingpropertydelegate-noreflection:$versions.utils.viewbinding"
+
+    implementation "com.hannesdorfmann:adapterdelegates4-kotlin-dsl-viewbinding:$versions.utils.adapter_delegate"
+
+    // Glide
+    implementation "com.github.bumptech.glide:glide:$versions.utils.glide"
+    kapt "com.github.bumptech.glide:compiler:$versions.utils.glide"
+
+    // Testing
+    testImplementation "junit:junit:4.13.2"
+    androidTestImplementation "androidx.test.ext:junit:1.1.3"
+    androidTestImplementation "androidx.test.espresso:espresso-core:3.4.0"
+}
